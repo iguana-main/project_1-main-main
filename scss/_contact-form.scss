@@ -1,0 +1,43 @@
+@use '_variables.scss' as *;
+@use '_mixins.scss' as *;
+
+input, textarea, button {
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    transition: .2s;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+    border: 1.5px solid $color-terracotta;
+    outline: 0;
+    resize: none; 
+
+    &:focus{
+        box-shadow: 0 0 1rem grey;
+    }
+}
+
+input{
+    height: 6rem;
+}
+
+textarea{
+    height: 25rem;
+}
+
+button{
+    width: 25%;
+    padding: 14px; 
+    margin-top: .5rem;
+    background-color: $color-terracotta;
+    color: $color-beige; 
+    border: none;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 15px grey;
+        background-color: $color-navy;
+    }
+}

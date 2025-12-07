@@ -1,0 +1,76 @@
+@use '_variables.scss' as *;
+
+.offer-box {
+    background-color: $color-beige;
+    color: $color-navy;
+    margin: 0 auto;
+    box-shadow: 0 0 15px black;
+    border-radius: 1.5rem;
+    border: 1px solid $color-navy-alpha3;
+
+    h3 {
+        padding-top: 15px;
+        font-size: 2.5rem;
+    }
+
+    p {
+        padding: 10px;
+        margin: 0;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    .check-offer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem
+    }
+
+    .check-offer-button{
+        background-color: $color-terracotta;
+        transition: 0.4s;
+        width: 40%;
+        border-radius: 1rem;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 15px black;
+            transition: 0.2s;
+            scale: 1.05;
+            background-color: $color-navy;
+        }
+    }
+
+    .offer-image {
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+        text-align: center;
+        img {
+            height: auto;
+            width: 100%;
+            border-radius: .6rem;
+            padding: .2rem;
+        }
+    }
+
+    .more{
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .more-button{
+        width: 25%;
+    }
+}
